@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <title>A Journey in the Desert Sahara</title>
+    <link rel="stylesheet" href="static/styles.css">
+  </head>
+
+<body>
+<div>
+<h2><mark> {{ hello_title }} {{ welcome_title }} </mark></h2>
+<!--audio file played automatically in loop -->
+<audio autoplay="autoplay" controls loop>
+  <source src="static/screwmusic.mp3" type="audio/mpeg">
+</audio>
+  {% block content %}
+
+  <p>Empty Layout</p>
+  {% endblock %}
+</div>
+</body>
+</html>

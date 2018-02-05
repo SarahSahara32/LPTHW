@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+
+{% if scene %}
+
+  <h1> {{ scene.title }} </h1>
+  <pre> {{ scene.description }} </pre>
+  {% if scene.urlname == "death" %}
+    <p><a href="/">Play Again?</a></p>
+  {% else %}
+    <p>
+      <form action="/game" method="POST">
+        What do you do? <input type="text" name="userinput" placeholder="Only lower case"> <input type="SUBMIT">
+      </form>
+    </p>
+    <br>
+    <h3 class="help">
+      Helpcenter:
+    <a title="'north' or 'south'">The Desert Sahara |</a>
+    <a title="yes or no">The Oasis |</a>
+    <a title="'negociate', 'cut'">The Tribe of Cajun |</a>
+    <a title="Choose the pod number">Escape Pod</a>
+    </h3>
+
+  {% endif %}
+
+{% else %}
+  <p><a href="/">Start the Game now.</a></p>
+{% endif %}
+
+{% endblock %}
