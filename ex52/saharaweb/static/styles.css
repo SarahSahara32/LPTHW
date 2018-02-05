@@ -1,0 +1,48 @@
+body {
+    background-image: url("papyrus.jpg");
+    background-color: #000080;
+    text-align: center;
+    color: black;
+    font-family: cursive;
+}
+
+div {
+  height: 500px;
+  width: 50%;
+  margin-top: 150px;
+  margin-right: 350px;
+  margin-left: 350px;
+  background-color: rgb(234, 225, 149, 0.8);
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+
+p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.help {
+    color: grey !important;
+    font-family: arial;
+    font-size: 14px !important;
+    text-align: center;
+
+}
